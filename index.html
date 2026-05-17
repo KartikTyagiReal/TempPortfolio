@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Tyagi | Portfolio</title>
+    <!-- Google Fonts for a classy, minimalistic look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #f5f5f7;
+            --accent-color: #8e8e93;
+            --highlight: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 3.5rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--highlight);
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #222;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #d1d1d6;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-text {
+            color: var(--highlight);
+            font-weight: 400;
+        }
+
+        /* Project / Tech Section Styling */
+        .status-box {
+            background: #121212;
+            border: 1px solid #1c1c1e;
+            padding: 1.5rem;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--highlight);
+        }
+
+        .pulse-icon {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #34c759;
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: 0 0 8px #34c759;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .disabled-link {
+            color: #48484a;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: not-allowed;
+            transition: color 0.3s ease;
+        }
+
+        .disabled-link:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2rem; }
+            body { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header>
+            <h1>Kartik Tyagi</h1>
+            <div class="subtitle">Aspiring Genius & Builder</div>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>Background</h2>
+            <p>Currently pursuing my B.Tech (2nd Year) at <span class="highlight-text">GGSIPU</span>. Ground zero of a tech journey.</p>
+        </section>
+
+        <!-- Current Focus Section -->
+        <section>
+            <h2>Current Focus</h2>
+            <div class="status-box">
+                <p style="margin-bottom: 0.5rem;"><span class="pulse-icon"></span><span class="highlight-text">Under Construction</span></p>
+                <p style="font-size: 0.95rem; color: var(--accent-color); margin: 0;">
+                    Currently breaking things behind the scenes. Deep-diving into the foundational tech stack, setting up environments, and mapping out the initial batch of projects. True skills aren't listed, they're built.
+                </p>
+            </div>
+        </section>
+
+        <!-- Digital Footprint Section -->
+        <section>
+            <h2>Connect</h2>
+            <p>The digital footprint is loading. Rebranding in progress.</p>
+            <div class="links-grid">
+                <span class="disabled-link">// GitHub ↗️ (Soon)</span>
+                <span class="disabled-link">// LinkedIn ↗️ (Soon)</span>
+                <span class="disabled-link">// Twitter ↗️ (Soon)</span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
